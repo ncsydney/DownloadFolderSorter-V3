@@ -22,7 +22,7 @@ function SortFiles {
         }
     }        
     try{
-        # Check for Video files, if they exist, move them
+        # Check for speficied files, if they exist, move them
         $count = 0
         foreach($file in $DownloadPath){
             foreach($Xtension in $Specified_array){
