@@ -1,3 +1,5 @@
 # DownloadFolderSorter-V3
 
-# With this simple PowerShell Script you can sort your messy downloads folder.
+## With this simple PowerShell Script you can sort your messy downloads folder.
+
+![Output](example.png)
