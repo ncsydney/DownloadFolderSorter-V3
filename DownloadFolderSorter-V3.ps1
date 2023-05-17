@@ -1,8 +1,7 @@
 function SortFiles {
     Param(
         [Parameter(Mandatory=$true)]
-        [string[]]
-        $RelativeDownloadPath,
+        [string[]]$RelativeDownloadPath,
 
         [Parameter(Mandatory=$true)]
         [string[]]$specifiedArray,
