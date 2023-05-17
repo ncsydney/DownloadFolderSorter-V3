@@ -34,7 +34,7 @@ function SortFiles {
             }
         }
         if($count -ge 1){
-            Write-Host "Moved $count file(s) to $RelativeDownloadPath\$dirName"
+            Write-Host "Moved $count file(s) to $RelativeDownloadPath\$dirName -ForegroundColor Green"
             $MovedItems
         }
     }
