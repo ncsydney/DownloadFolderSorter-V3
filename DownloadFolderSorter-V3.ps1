@@ -51,10 +51,10 @@ $ProgrammingFmt = @("py","ps1","js","ts","c","cs","cpp","sh","java")
 $OSExtentions = @("iso")
 $CompressedDirs = @("7z","rar","zip","gz")
 
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $VideoFmt -dirName $Paths[0] #"Video"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $PhotoFmt -dirName $Paths[1] #"Foto"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgramFmt -dirName $Paths[2] #"Programs"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $3DFmt -dirName $Paths[3] #"3D-Files"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgrammingFmt $Paths[4] -dirName #"Programming"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $OSExtentions -dirName $Paths[5] #"Iso"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $CompressedDirs -dirName $Paths[6] #"Compressed"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $VideoFmt -dirName "Video"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $PhotoFmt -dirName "Foto"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgramFmt -dirName "Programs"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $3DFmt -dirName "3D-Files"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgrammingFmt -dirName "Programming"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $OSExtentions -dirName "Iso"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $CompressedDirs -dirName "Compressed"
