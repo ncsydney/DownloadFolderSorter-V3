@@ -1,10 +1,11 @@
 function SortFiles {
     Param(
         [Parameter(Mandatory=$true)]
-        [string[]]$RelativeDownloadPath,
+        [string[]]
+        $RelativeDownloadPath,
 
         [Parameter(Mandatory=$true)]
-        [string[]]$specifiedArray,
+        [string[]]$Specified_array,
 
         [Parameter(Mandatory=$true)]
         [string[]]$dirName
@@ -21,7 +22,7 @@ function SortFiles {
         }
     }        
     try{
-        # Check for speficied files, if they exist, move them
+        # Check for specified files, if they exist, move them
         $count = 0
         foreach($file in $DownloadPath){
             foreach($Xtension in $Specified_array){
@@ -51,10 +52,10 @@ $ProgrammingFmt = @("py","ps1","js","ts","c","cs","cpp","sh","java")
 $OSExtentions = @("iso")
 $CompressedDirs = @("7z","rar","zip","gz")
 
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $VideoFmt -dirName "Video"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $PhotoFmt -dirName "Foto"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgramFmt -dirName "Programs"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $3DFmt -dirName "3D-Files"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $ProgrammingFmt -dirName "Programming"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $OSExtentions -dirName "Iso"
-SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -specifiedArray $CompressedDirs -dirName "Compressed"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $VideoFmt -dirName $Paths[0] #"Video"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $PhotoFmt -dirName $Paths[1] #"Foto"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $ProgramFmt -dirName $Paths[2] #"Programs"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $3DFmt -dirName $Paths[3] #"3D-Files"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $ProgrammingFmt -dirName $Paths[4] #"Programming"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $OSExtentions -dirName $Paths[5] #"Iso"
+SortFiles -RelativeDownloadPath "C:\Users\$Env:UserName\Downloads" -Specified_array $CompressedDirs -dirName $Paths[6] #"Compressed"
