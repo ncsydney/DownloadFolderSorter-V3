@@ -5,10 +5,12 @@ function SortFiles {
         $RelativeDownloadPath,
 
         [Parameter(Mandatory=$true)]
-        [string[]]$Specified_array,
+        [string[]]
+        $Specified_array,
 
         [Parameter(Mandatory=$true)]
-        [string[]]$dirName
+        [string[]]
+        $dirName
     )
     
     $DownloadPath = Get-ChildItem -Path $RelativeDownloadPath | Where-Object {!$_.PSIsContainer}
